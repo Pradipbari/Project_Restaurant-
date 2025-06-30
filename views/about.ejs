@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Burger House</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        background: #fff8f0;
+        color: #333;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        right: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+
+        box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
+      }
+      .logo {
+        height: 100px;
+        width: 100px;
+        padding-left: 100px;
+        z-index: 2000;
+      }
+      .goHome {
+        padding-right: 90px;
+        text-decoration: none;
+        color: #080000;
+      }
+      .goHome:hover {
+        color: #fd026b;
+      }
+
+      .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 60px 10%;
+        gap: 50px;
+        align-items: center;
+        margin-top: 100px;
+      }
+
+      .about-text {
+        flex: 1;
+        max-width: 600px;
+      }
+
+      .about-text h2 {
+        font-size: 38px;
+        color: #d62828;
+        margin-bottom: 15px;
+      }
+
+      .about-text p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #444;
+      }
+
+      .about-details {
+        margin-top: 20px;
+        font-size: 16px;
+      }
+
+      .about-details span {
+        display: block;
+        margin-bottom: 8px;
+      }
+
+      .burger-image {
+        flex: 1;
+        max-width: 500px;
+      }
+
+      .burger-image img {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+
+      @media (max-width: 768px) {
+        .about-container {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .logo h1 {
+          font-size: 22px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header with Logo -->
+    <header>
+      <div><img class="logo" src="\images\logo.jpg" alt="" /></div>
+
+      <a class="goHome" href="/">Home</a>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-container">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          Welcome to <strong>Bari Restro</strong> – where every bite is a blast
+          of flavor! Since our launch, we’ve been committed to serving premium,
+          handcrafted burgers with fresh ingredients and bold taste.
+          <br /><br />
+          Our chefs craft each burger with passion — from juicy patties to
+          crispy toppings and house-made sauces. Whether you're dining in or
+          ordering out, we make your burger dreams come true.
+        </p>
+
+        <div class="about-details">
+          <span
+            ><strong>📍 Address:</strong> Bari Restro HQ, Jalgaon, Maharashtra,
+            India</span
+          >
+          <span><strong>📅 Established:</strong> 2025</span>
+          <span><strong>📞 Contact:</strong> +91-9876543210</span>
+        </div>
+      </div>
+
+      <div class="burger-image">
+        <img src="\images\logo.jpg" alt="Burger" />
+      </div>
+    </section>
+  </body>
+</html>
