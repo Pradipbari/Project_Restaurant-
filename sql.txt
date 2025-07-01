@@ -1,1 +1,0 @@
-create table orders(id int primary key,itemName varchar(500),price decimal(10,2),userName varchar(500),email varchar(500),address varchar(500));
